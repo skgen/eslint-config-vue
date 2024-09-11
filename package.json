@@ -1,7 +1,7 @@
 {
   "name": "@skg3n/eslint-config-vue",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "files": [
     "dist"
   ],
@@ -12,7 +12,7 @@
     "link:local": "pnpm build && rm -rf .link && mkdir .link && cp -r dist .link/dist && cp package.json .link"
   },
   "dependencies": {
-    "@skg3n/eslint-config-base": "^1.0.0",
+    "@skg3n/eslint-config-base": "^2.0.0",
     "@vue/eslint-config-typescript": "^13.0.0",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.28.0",

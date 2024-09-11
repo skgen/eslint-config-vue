@@ -1,6 +1,4 @@
 {
-  "name": "vue-3-csr-app",
-  "version": "0.0.0",
   "scripts": {
     "review": "pnpm review:eslint",
     "review:eslint": "eslint src --ext .vue,.ts",
