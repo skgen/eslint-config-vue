@@ -1,0 +1,30 @@
+{
+  "name": "@skg3n/eslint-config-vue",
+  "license": "MIT",
+  "version": "1.0.0",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "review:eslint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "link:local": "pnpm build && rm -rf .link && mkdir .link && cp -r dist .link/dist && cp package.json .link"
+  },
+  "dependencies": {
+    "@skg3n/eslint-config-base": "^1.0.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.28.0",
+    "typescript": "~5.4.5"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "typescript": "~5.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skgen/eslint-config-vue.git"
+  },
+  "homepage": "https://github.com/skgen/eslint-config-vue#readme"
+}

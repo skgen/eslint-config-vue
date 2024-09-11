@@ -1,0 +1,18 @@
+{
+  "name": "vue-3-csr-app",
+  "version": "0.0.0",
+  "scripts": {
+    "review": "pnpm review:eslint",
+    "review:eslint": "eslint src --ext .vue,.ts",
+    "link:local": "rm -rf node_modules/@skg3n/eslint-config-vue && pnpm install"
+  },
+  "dependencies": {
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@skg3n/eslint-config-vue": "file:../../.link",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "^8.57.0",
+    "typescript": "~5.4.5"
+  }
+}
